@@ -1,0 +1,79 @@
+@import url(reset.css);
+
+
+/* размытый фон https://webref.ru/recipe/2343 */
+body::before
+{
+    content: '';
+    position: fixed; /* Фиксируем на одном месте */
+    left: 0; right: 0; /* Вся ширин */
+    top: 0; bottom: 0; /* Вся высота */
+    z-index: -1; /* Фон ниже текста */
+    /* Параметры фона */
+    background: url('../images/02027-RG.jpg') center / cover no-repeat;
+    filter: blur(5px); /* Размытие */
+}
+
+.wrapper
+{
+    width: 640px;
+    margin: 0 auto;
+    color: #000000;
+}
+
+/* портфолио вёрстки */
+.author-portfolio
+{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 170px minmax(170px, 1fr);
+    justify-content: space-between;
+    align-content: space-between;
+    margin: 30px 0;
+}
+.demo-page-link
+{
+    display: block;
+    width: 140px;
+    height: 140px;
+    background-color: rgb(212, 212, 212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.demo-page-link img
+{
+    width: 98%;
+    height: 98%;
+}
+
+/* краткая биография */
+.author-biography
+{
+    background-color: rgb(212, 212, 212);
+    padding: 20px;
+}
+.author-biography p+p{ margin-top: 20px; }
+
+/* контактные данные */
+.author-contacts
+{
+    height: 30px;
+    background-color: rgb(212, 212, 212);
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.push-apart{ flex-basis: 53%; }
+.author-contacts a img
+{
+    width: 40px;
+    height: 40px;
+}
+.author-contacts p
+{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+}

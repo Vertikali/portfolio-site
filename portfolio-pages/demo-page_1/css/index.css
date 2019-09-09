@@ -1,0 +1,354 @@
+@import url(reset.css);
+
+body
+{
+    font-family: Arial;
+    background-color: #ebebeb;
+}
+
+p
+{
+    margin-top: 20px;
+}
+
+p, ul li
+{
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.4;
+}
+
+h1
+{
+    font-size: 60px;
+    color: #ffffff;
+    line-height: 0.7;
+    margin-bottom: 37px;
+    text-align: left;
+}
+
+h2
+{
+    font-size: 30px;
+    color: #445161;
+    line-height: 0.7;
+    text-align: center;
+}
+
+h3
+{
+    font-size: 24px;
+    color:  #445161;
+}
+
+.uniform
+{
+    width: 1180px;
+    padding: 50px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#about, #scrinshots, #buy_it_now
+{
+    background-color: #ffffff;
+}
+
+#pluses, #reviews
+{
+    background-color: #f5f5f5;
+}
+
+#header, #contacts
+{
+    background-color: #445162;
+}
+
+.pluses_tile, .scrinshot_tile, .review_tile
+{
+    margin-top: 30px;
+    width: 574px;
+    float: left;
+    margin-right: 16px;
+}
+
+#product_brief
+{
+    max-width: 660px;
+    float: left;
+}
+
+#product_brief ul li
+{
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.7;
+    background: url(../images/check_icon.png) no-repeat 0 6px;
+    padding-left: 37px;
+}
+
+#shape_9
+{
+    width: 469px;
+    height: 214px;
+    background-color: #ffffff;
+    float: right;
+}
+
+#product_text
+{
+    width: 654px;
+    float: left;
+}
+
+#product_text h2
+{
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+#video
+{
+    width: 430px;
+    height: 244px;
+    background-color: #445161;
+    float: right;
+}
+
+#pluses ul li
+{
+    padding-left: 40px;
+    background: url(../images/plus_icon.png) no-repeat 0 5px;
+    margin-bottom: 20px;
+}
+
+#pluses ul li:last-child
+{
+    margin-bottom: 0;
+}
+
+.scrinshot_tile img
+{
+    width: 200px;
+    height: 150px;
+    float: left;
+}
+
+.scrinshot_tile h3
+{
+    line-height: 0.8;
+    margin-left: 215px;
+}
+
+.scrinshot_tile p
+{
+
+    margin-left: 215px;
+}
+
+.review_tile
+{
+    height: 121px;
+    background: url(../images/bg_review.png) no-repeat 90px 0px;
+}
+
+.review_tile img
+{
+    width: 75px;
+    height: 75px;
+    float: left;
+}
+
+.review_tile p
+{
+    font-size: 14px;
+    line-height: 1.3;
+    font-style: italic;
+    margin-top: 10px;
+    margin-left: 118px;
+}
+
+.name_respondent
+{
+    font-style: normal;
+    color: #989898;
+}
+
+.equilibration
+{
+    margin: 0 95px 0 50px;
+}
+
+.price_tag
+{
+    width: 300px;
+    float: left;
+    margin-left: 45px;
+}
+
+.price_tag h3
+{
+    color: #ffffff;
+    text-align: center;
+    margin: 16px 0;
+}
+
+.price_tag p
+{
+    font-size: 40px;
+    color: #445162;
+    text-align: center;
+    margin: 19px 0;
+}
+
+.price_tag a img
+{
+    display: block;
+    width: 260px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.price_tag ol
+{
+    margin: 19px 0;
+    list-style-type: decimal;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.7;
+    width: 260px;
+    margin-left: 38px;
+}
+
+#standart
+{
+    height: 306px;
+    background: url(../images/standart.png) no-repeat;
+    margin-top: 228px;
+}
+
+#premium
+{
+    height: 404px;
+    background: url(../images/premium.png) no-repeat;
+    margin-top: 130px;
+}
+
+#lux
+{
+    height: 499px;
+    background: url(../images/lux.png) no-repeat;
+    margin-top: 35px;
+}
+
+
+#contacts h2
+{
+    color: #ffffff;
+}
+
+#forms
+{
+    width: 790px;
+    margin: 10px auto 0 auto;
+}
+
+#input_fields
+{
+    float: left;
+}
+
+.row input, .message_area textarea
+{
+    padding: 10px 25px 10px 10px;
+    width: 475px;
+    color: #445162;
+    font-family: Arial;
+    font-size: 16px;
+    background: none;
+    outline: none;
+    -moz-appearance: none;
+    border: none;
+}
+
+.row
+{
+    width: 500px;
+    height: 41px;
+    background: url(../images/shape_4.png) no-repeat 0 1px;
+}
+
+.message_area textarea
+{
+    resize: none;
+}
+
+.message_area
+{
+    width: 500px;
+    height: 171px;
+    background: url(../images/shape_6.png) no-repeat 0 1px;
+    display: block;
+}
+
+#button_position input
+{
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+#contact_links
+{
+    width: 241px;
+    float: right;
+}
+
+.contact_details li
+{
+    margin-bottom: 20px;
+}
+
+.contact_details li img
+{
+    float: left;
+}
+
+.contact_details li p
+{
+    color: #ffffff;
+    margin-left: 30px;
+    margin-bottom: 0;
+}
+
+.socia_buttons
+{
+    margin-top: 30px;
+}
+
+.socia_buttons li
+{
+    float: left;
+    margin-left: 6px;
+}
+
+.socia_buttons li:first-child
+{
+    margin-left: 0;
+}
+
+#copyright
+{
+    width: 1280px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    padding: 6px 0;
+}
+
+#copyright p
+{
+    font-size: 12px;
+    color: #445162;
+    text-align: center;
+    line-height: 1;
+    margin: 0;
+}

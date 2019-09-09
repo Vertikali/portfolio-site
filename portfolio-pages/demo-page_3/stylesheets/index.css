@@ -1,0 +1,417 @@
+@import url(reset.css);
+@import url(../fonts/NovecentoWide-Bold/Novecento_WideBold.css);
+@import url(../fonts/segoe-wp-n-cufonfonts-webfont/style.css);
+@import url(../fonts/SegoeUI-Regular/segoe-ui-regular.css);
+@import url(../fonts/SegoeUI-SemiBold/SegoeUI-Semibold.css);
+@import url(../fonts/PTSans/stylesheet.css);
+@import url(../fonts/SofiaProLight/style.css);
+header, nav, footer, article, aside, section {display: block;}
+
+body 
+{
+    background: url(../images/body_bg.jpg);
+}
+
+.wrapper 
+{
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 1605px;
+    background: url(../images/content_bg.jpg);
+}
+
+.wrapper aside 
+{
+    float: left;
+    width: 282px;
+    background-color: #fff;
+    height: 100%;
+}
+
+.fifty-fifty
+{
+    padding: 0 41px;
+}
+
+.fifty-fifty>img
+{
+    margin: 18px 80px 18px 71px;
+}
+
+aside h1
+{
+    text-align: center;
+    text-transform: uppercase;
+    font: bold 38px 'Novecento Wide', Helvetica;
+    color: #7e7d7e;
+}
+
+aside h1 span {color: #d66cb7;}
+
+.cling
+{
+    margin: 52px 0 70px 50px;
+}
+
+.cling li
+{
+
+    height: 44px;
+    width: 232px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+    padding-right: 0;
+}
+
+.cling li a
+{
+    font: bold 20px Helvetica, 'Segoe WP N';
+    color: #7e7d7e;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.cling li:nth-child(2)
+{
+    background-color: #6db9d5;
+}
+
+.cling li:nth-child(2) a
+{
+    color: #ffffff;
+}
+
+.cling li a img
+{
+    margin: 9px 13px;
+    float: left;
+}
+
+.cling span
+{
+    margin: 13px 0;
+    float: left;
+
+}
+
+aside section
+{
+    margin-top: 48px;
+}
+
+aside h2
+{
+    font: 32px 'PT Sans', Helvetica;
+    color: #959595;
+    margin-bottom: 24px;
+}
+
+aside p
+{
+    font: 18px/1.5 'PT Sans', Helvetica;
+    color: #959595;
+}
+
+.tags img, .tags h2
+{
+    float: left;
+    margin-left: 10px;
+    line-height: 1;
+}
+
+.tags
+{
+    overflow: hidden;
+}
+
+aside table td a
+{
+    font: 16px 'PT Sans', Helvetica;
+    color: #908f8f;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    background-color: #eaeaea;
+    padding: 4px 7px;
+    margin: 6px 12px;
+    display: block;
+    text-decoration: none;
+}
+
+aside table td a:first-child
+{
+    margin-left: 0;
+}
+
+h2
+{
+    font: 38px 'Segoe UI Regular', Helvetica;
+    color: #545454;
+    line-height: 0.9;
+}
+
+h2 span
+{
+    font-family: 'Segoe UI Semibold', Helvetica;
+    font-weight: bold;
+}
+
+.content
+{
+    border-top: 7px solid #6dbad6;
+    float: right;
+    width: 718px;
+    height: 100%;
+}
+
+.header
+{
+    margin: 32px 29px 43px 0;
+    overflow: hidden;
+    width: 628px;
+    float: right;
+    height: 35px;
+}
+
+.header>img, .header>h2
+{
+    float: left;
+    margin: 0 11px;
+}
+
+.header ul
+{
+    display: block;
+    background: url("../images/content_header_social-icon.png") no-repeat 0px 0px;
+    width: 190px;
+    height: 32px;
+}
+
+.header ul, .header ul li
+{
+    float: right;
+}
+
+.header ul li a
+{
+    display: block;
+    margin-right: 1px;
+    margin-top: 1px;
+}
+
+
+.important-video
+{
+    width: 666px;
+    margin-left: 23px;
+    margin-right: 29px;
+}
+
+.important-video video
+{
+    height: 326px;
+}
+
+.title_important-video
+{
+    overflow: hidden;
+    background-color: #9c9c9c2f;
+    border: 1px solid #d4d4d4;
+    margin-top: 5px;
+    height: 27px;
+}
+
+.title_important-video p
+{
+    float: left;
+    font: 18px 'Sofia Pro', Helvetica;
+    color: #a3a2a2;
+    margin-left: 10px;
+    margin-top: 4px;
+    line-height: 1;
+}
+
+.title_important-video ul li a
+{
+    float: right;
+    font: 12px 'Sofia Pro', Helvetica;
+    color: #6bb7d3;
+}
+
+.title_important-video img
+{
+    margin: 5px 7px 0px 17px;
+}
+
+.switch-view
+{
+    overflow: hidden;
+    margin-top: 34px;
+    margin-right: 50px;
+}
+
+.switch-view p, .switch-view img
+{
+    float: right;
+}
+
+.switch-view p
+{
+    margin: 0px 5px;
+    font: 20px 'Sofia Pro', Helvetica;
+    color: #8b8b8b;
+}
+
+.video-list
+{
+    margin-left: 41px;
+    margin-right: 50px;
+    margin-top: 26px;
+    width: 628px;
+    overflow: hidden;
+}
+
+.video-list article
+{
+    width: 628px;
+    height: 210px;
+    float: right;
+    overflow: hidden;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.video-list article:last-child
+{
+    margin-bottom: 43px;
+}
+
+.sticker-film
+{
+    position: absolute;
+    left: 0;
+    top: 35%;
+}
+
+.corner-arrow
+{
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+}
+
+.video-list article video
+{
+    float: left;
+    width: 258px;
+    height: 208px;
+    margin-left: 28px;
+    border-top: 1px solid #cfcfcf;
+    border-left: 1px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.comment
+{
+    float: right;
+    width: 302px;
+    height: 182px;
+    padding: 10px 19px 16px 19px;
+    background-color: #ffffff;
+    border-top: 1px solid #cfcfcf;
+    border-right: 1px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
+    overflow: hidden;
+}
+
+.comment h3
+{
+    font: 28px 'Sofia Pro', Helvetica;
+    color: #000000;
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+
+.comment>p
+{
+    font: 11px 'PT Sans', Helvetica;
+    color: #727272;
+    line-height: 1.8;
+    margin-top: 12px;
+}
+
+.post_meta-data
+{
+    overflow: hidden;
+    background: url(../images/content_video-post_meta-data-icon.png) no-repeat 10px 2px;
+    margin-bottom: 3px;
+}
+
+.post_meta-data p
+{
+    float: left;
+    font: 11px Helvetica;
+    color: #727272;
+    margin-left: 25px;
+}
+
+.line
+{
+    height: 3px;
+    background: url(../images/content_video-post_line-icon.png) repeat-x;
+}
+
+footer 
+{
+    background-color: #fff;
+    width: 1000px;
+    margin: 11px auto;
+    height: 76px;
+    overflow: hidden;
+}
+
+footer p, footer a
+{
+    font: 16px 'PT Sans', Helvetica;
+}
+
+.footer_left
+{
+    color: #9d9d9d;
+    margin: 24px 34px 16px 34px;
+    width: 330px;
+    float: left;
+}
+
+.footer_left>ul>li
+{
+    float: left;
+    border-left: 1px solid #b5b5b5;
+    padding: 0 5px;
+
+}
+
+.footer_left>ul>li:first-child
+{
+    padding-left: 0;
+    border-left: none;
+}
+
+.footer_left a
+{
+    color: #a3a3a3;
+    text-decoration: none;
+}
+
+.footer_right
+{
+    width: 160px;
+    float: right;
+}
+
+.footer_right a
+{
+    float: right;
+    margin: 25px 25px 25px 0;
+}

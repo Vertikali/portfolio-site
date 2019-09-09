@@ -1,0 +1,401 @@
+﻿@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&display=swap');
+
+:root
+{
+    box-sizing: border-box;
+    font-size: 14px;
+}
+*, ::before, ::after{ box-sizing: inherit; }
+
+body{ background-color: #dfdfdd; }
+
+p, li{ color: #000000; }
+p, li, a{ font-family: 'ArialMT', Arial, sans-serif; }
+h2, h3{ font-family: 'Yanone Kaffeesa Regular', 'Yanone Kaffeesatz', Arial, sans-serif; }
+h2{ font-size: 28px; }
+h3{ font-size: 20px; }
+
+input, textarea
+{
+    font: italic 14px 'ArialNarrow', Arial, sans-serif;
+    color: #c0c0c0;
+    line-height: 1.6;
+    border: 1px solid #d5d5d5;
+    background-color: #f2f2f2;
+    box-shadow: none;
+    padding: 18px 15px 17px 25px;
+}
+input{ height: 10px; }
+
+.wrapper
+{
+    background: url(../images/bg-photo100-10.png) no-repeat;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.symmetric
+{
+    margin: 0 auto;
+    width: 83.21%;
+    height: 100%;
+}
+
+.stencil{ border: 1px solid #d5d5d5; }
+.stencil2, .stencil
+{
+    background-color: #ffffff;
+    padding: 31px;
+}
+
+.black-button button, .black-button a
+{
+    display: block;
+    width: 193px;
+    height: 45px;
+    font: 18px 'Yanone Kaffeesa Regular', 'Yanone Kaffeesatz', Arial, sans-serif;
+    color: #ffffff;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #202020;
+    border: none;
+    line-height: 2;
+}
+.black-button button:hover{ cursor: pointer; }
+
+/* Header */
+header
+{
+    height: 140px;
+    background-color: #f7f8f7;
+}
+.hf
+{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+.hf-links li
+{
+    float: left;
+    margin-right: 33px;
+}
+.hf-links{ overflow: hidden; }
+.hf-logo img
+{
+    display: block;
+    margin: 0 auto;
+}
+.hf-menu a
+{
+    display: block;
+    float: right;
+}
+
+/* work photos */
+.works
+{
+    margin: 63px 0;
+    height: 564px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2 auto);
+    justify-content: space-between;
+    align-content: space-between;
+}
+.works img
+{
+    border: 5px solid #f5f5f5;
+    width: 265px;
+    height: 265px;
+}
+
+/* HeroText */
+.HeroText
+{
+    height: 401px;
+    margin: 63px 0;
+}
+.text-simmetric
+{
+    width: 575px;
+    height: 253px;
+    margin: 42px auto;
+}
+.text-simmetric h2, .text-simmetric p{ text-align: center; }
+.text-simmetric p
+{
+    margin-top: 22px;
+    font: 18px 'ArialNarrow', Arial, sans-serif;
+    line-height: 1.6;
+}
+.text-simmetric a{ margin: 40px auto; }
+
+/* Blogs */
+.Blog
+{
+    height: 944px;
+    margin: 53px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.post
+{
+    width: 867px;
+    height: 458px;
+    display: grid;
+    grid-template-areas: "data data author"
+                         "header header author"
+                         "illustration item author";
+    grid-template-columns: 33.18% 49.95% 16.85%;
+    grid-template-rows: 7.54% 16.30% 76.15%;
+}
+.post p{ font: 14px 'ArialMT', Arial, sans-serif; }
+.post-data
+{
+    grid-area: data;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.post-data p{ color: #989b9f; }
+.post-data p span{ font-size: 13px; }
+.post-d1{ flex: 3; }
+.post-d2{ flex: 3; }
+.post-d3{ flex: 1; }
+.flag
+{
+    border: 5px solid #989b9f;
+    border-bottom: 6px solid transparent;
+    margin-bottom: 3px;
+    margin-left: 6px;
+}
+.post-header
+{
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.post-image{ grid-area: illustration; }
+.post-image img{ border: 5px solid #f0f0f0; }
+.post-image p
+{
+    margin-top: 10px;
+    margin-left: 6px;
+    font-size: 12px;
+    color: #6c6e72;
+}
+.post-text{ grid-area: item; }
+.post-text p + p{ margin-top: 20px; }
+.post-t1{ font: 17px/1.7 'ArialNarrow', Arial, sans-serif; }
+.post-t2{ line-height: 1.7; color: #636060; }
+.post-author
+{
+    margin-left: 50px;
+    grid-area: author;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.post-author h3{ margin-top: 52px; }
+.post-author p
+{
+    font-size: 12px;
+    color: #e6618c;
+    font-weight: bold;
+}
+.post-author>img{ margin: 13px 0 20px 0; }
+.post-author>a{ margin-top: 15px; }
+.links-to-the-author{position: relative;}
+.links-to-the-author2
+{
+    position: absolute;
+    top: 25%;
+    left: 100%;
+    display: none;
+}
+.links-to-the-author:hover .links-to-the-author2{ display: block; }
+
+/* Categorys, Archive */
+.menu
+{
+    width: 267px;
+    height: 430px;
+}
+.post + .post, .menu + .menu{ margin-top: 28px; }
+.menu h3
+{
+    margin-top: 14px;
+    margin-bottom: 37px;
+    text-align: center;
+}
+.menu>ul
+{
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 21px;
+}
+.menu a
+{
+    color: #e6618c;
+    text-decoration: underline;
+}
+.menu-link>ul{ margin-left: 0; }
+.menu>ul>li
+{
+    margin-bottom: 19px;
+    position: relative;
+}
+.year
+{
+    margin-bottom: 19px;
+    position: relative;
+}
+.menu-arrow
+{
+    width: 10px;
+    position: absolute;
+}
+.menu-arrow
+{
+    border: 5px solid transparent;
+    border-left: 5px solid #c2c2c2;
+    top: 3px;
+}
+.parenthesis-indent{ margin-left: 14px; }
+.menu .menu-arrow{ left: -22px; }
+.menu-link .menu-arrow{ left: -18px; }
+.menu>ul>li:hover>.menu-arrow, .year>.menu-arrow
+{
+    border: 5px solid transparent;
+    border-top: 5px solid #000000;
+    top: 5px;
+    left: -25px;
+}
+.menu-link{ margin-top: 16px; }
+.menu-link>li
+{
+    margin-bottom: 13px;
+    position: relative;
+}
+.menu-link>li>a
+{
+    font-family: 'Arial-ItalicM', Arial, sans-serif;
+    font-style: italic;
+}
+.sloy>li{ display: none; }
+li:hover>.sloy>li{ display: block; }
+
+/* Contact Me, Random Posts, Newsletter */
+.continue-discoveries
+{
+    height: 688px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    margin: 53px 0 100px 0;
+}
+
+/* Contact Me */
+#contact-me
+{
+    height: 657px;
+    width: 565px;
+    display: flex;
+    flex-direction: column;
+}
+#contact-me h2{ margin-top: 19px; }
+.contactMe-text
+{
+    color: #636060;
+    line-height: 2;
+    margin-top: 26px;
+    width: 400px;
+}
+.contactMe-input p span
+{
+    padding-left: 25px;
+    line-height: 2.6;
+}
+.contactMe-input
+{
+    margin-top: 20px;
+    overflow: hidden;
+}
+#contact-me input
+{
+    width: 264px;
+    float: left;
+}
+.remark1
+{
+    font-style: italic;
+    color: #c0c0c0;
+}
+.remark2
+{
+    font-style: italic;
+    color: #f2ba59;
+}
+#contact-me textarea
+{
+    height: 241px;
+    width: 501px;
+    margin-top: 21px;
+    resize: none;
+}
+#contact-me button{ margin-top: 22px; }
+
+/* Random Posts */
+.random-posts{ overflow: hidden; }
+.random-post
+{
+    height: 348px;
+    width: 265px;
+}
+.random-post img
+{
+    border: 5px solid #c2c2c2;
+    margin: 18px 0 16px 0;
+}
+.random-post h2{ margin-top: 8px; }
+.random-post p{ font: 20px 'Yanone Kaffeesa Regular', 'Yanone Kaffeesatz', Arial, sans-serif; }
+#random-post1{ float: left; }
+#random-post2{ float: right; }
+
+/* Newsletter */
+#newsletter
+{
+    height: 304px;
+    width: 564px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#newsletter img{ margin-top: 20px; }
+#newsletter h2{ margin-top: 13px; }
+#newsletter input
+{
+    margin-top: 34px;
+    width: 385px;
+    text-align: center;
+}
+#newsletter button{ margin: 19px auto; }
+
+/* Footer */
+footer
+{
+    height: 140px;
+    background-color: #202020;
+    margin-top: 75px;
+}

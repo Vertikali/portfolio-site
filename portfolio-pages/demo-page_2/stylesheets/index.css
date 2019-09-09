@@ -1,0 +1,401 @@
+@import url(reset.css);
+
+.uniform
+{
+    width: 2342px;
+    padding: 0 509px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#banner
+{
+    height: 1259px;
+    background: url(../images/background_header.jpg) no-repeat;
+    overflow: hidden;
+    padding-top: 131px;
+    padding-bottom: 459px;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+#header p
+{
+    font-style: italic;
+    font-size: 40px;
+    color: #c9ced7;
+    margin: 24px 48px;
+    float: right;
+}
+
+#header a
+{
+    margin-top: 8px;
+    float: right;
+}
+
+#news
+{
+    margin-top: 450px;
+    height: 711px;
+}
+
+#news_text
+{
+    width: 1333px;
+    float: left;
+}
+
+#news_text h1
+{
+    font-family: "Roboto Slab", Roboto, Georgia;
+    font-size: 102px;
+    color: #ffffff;
+    line-height: 0.8;
+}
+
+#news_text p
+{
+    font-size: 52px;
+    color: #c5d2e5;
+    line-height: 1.4;
+    margin-top: 125px;
+    margin-bottom: 125px;
+    width: 1160px;
+}
+
+#news_image
+{
+    margin-top: 10px;
+    margin-right: 79px;
+    float: right;
+}
+
+#details_or_register
+{
+    height: 546px;
+    padding-top: 198px;
+    padding-bottom: 271px;
+    background-color: #f5f6f7;
+    overflow: hidden;
+}
+
+#details_or_register h4
+{
+    font-family: "Roboto Slab", Roboto, Georgia;
+    font-size: 80px;
+    color: #37414e;
+    line-height: 0.8;
+    width: 1157px;
+}
+
+#details_or_register p
+{
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 40px;
+    color: #4b596c;
+    line-height: 1.8;
+    margin-top: 86px;
+    width: 1157px;
+    display: block;
+}
+
+#details_or_register ul
+{
+    padding: 0 94px;
+    float: right;
+}
+
+#details_or_register ul li
+{
+    margin-top: 106px;
+}
+
+#details_or_register_icon
+{
+    margin: 0 68px;
+    float: left;
+}
+
+#details_or_register_text
+{
+    margin-top: 106px;
+    margin-left: 104px;
+    margin-right: 104px;
+    width: 1157px;
+    height: 432px;
+    float: left;
+}
+
+#intro-2
+{
+    width: 3360px;
+    height: 1632px;
+    background-color: #52ad81;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#intro-2 h3
+{
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 112px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 227px;
+    line-height: 1;
+}
+
+#intro-2 p
+{
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 60px;
+    color: #ffffff;
+    margin-top: 74px;
+}
+
+#pricing
+{
+    height: 2020px;
+    padding-top: 320px;
+    padding-bottom: 327px;
+    background-color: #f5f6f7;
+    position: relative;
+}
+
+#pricing_title h3
+{
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 86px;
+    color: #37414e;
+    font-weight: bold;
+    text-align: center;
+    line-height: 0.7;
+}
+
+#pricing_title p
+{
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 44px;
+    color: #858b93;
+    text-align: center;
+    margin-top: 71px;
+    line-height: 1.9;
+}
+
+#sticker
+{
+    position: absolute;
+    top: 725px;
+    left: 1931px;
+}
+
+.price_tag
+{
+    width: 675px;
+    height: 1551px;
+    float: left;
+    margin-left: 158px;
+    margin-top: 170px;
+}
+
+.price_tag h3
+{
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 68px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 0.7;
+    padding: 65px 0 52px 0;
+}
+
+.price_tag p
+{
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 68px;
+    color: #6d737b;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 97px;
+}
+
+.price_tag ul li
+{
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 60px;
+    color: #6d737b;
+    text-align: center;
+    padding-top: 205px;
+}
+
+.price_tag ul
+{
+    margin-bottom: 265px;
+}
+
+.price_tag:first-child
+{
+    margin-left: 0;
+}
+
+#free
+{
+    background: url(../images/background_gray.png) no-repeat;
+}
+
+#professional
+{
+    background: url(../images/background_green.png) no-repeat;
+}
+
+#enterprise
+{
+    background: url(../images/background_blue.png) no-repeat;
+}
+
+#video
+{
+    height: 2252px;
+    width: 3360px;
+    background-color: #e8eaec;
+    padding-bottom: 0;
+    margin: 0 auto;
+}
+
+#video_title h3
+{
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 86px;
+    color: #4b596c;
+    font-weight: bold;
+    text-align: center;
+    padding: 133px 0;
+}
+
+#video_canvas
+{
+    height: 1900px;
+    width: 3360px;
+    position: relative;
+}
+
+#video_canvas iframe
+{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border: none;
+}
+
+#contact_us
+{
+    height: 1952px;
+    padding-top: 245px;
+    padding-bottom: 208px;
+    background-color: #2d3136;
+}
+
+#contact_us img
+{
+    margin: 0 auto 71px auto;
+    display: block; 
+}
+
+#contact_us p
+{
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 70px;
+    color: #d7d7d7;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+#contact_us span
+{
+    color: #be393b;
+}
+
+#input_fields
+{
+    overflow: hidden;
+}
+
+.row
+{
+    width: 953px;
+    height: 321px;
+    margin-top: 161px;
+    margin-right: 234px;
+    float: left;
+}
+
+.row input, .message_area textarea
+{
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 60px;
+    color: #d7d7d7;
+    background-color: #2e3237;
+    border: 3px solid #4b4f53;
+    border-radius: 12px;
+    width: 876px;
+    padding: 63px 35px;
+}
+
+.row input:hover, .message_area textarea:hover
+{
+    border: 3px solid #743538;
+}
+
+.message_area textarea
+{
+    width: 1078px;
+    resize: none;
+}
+
+.message_area
+{
+    width: 1155px;
+    margin-top: 160px;
+    float: right;
+}
+
+#button_position
+{
+    margin-top: 183px;
+    margin-right: 3px;
+    float: right;
+}
+
+#footer
+{
+    height: 254px;
+    background-color: #2a2d33;
+    overflow: hidden;
+}
+
+#logo_footer
+{
+    margin: 99px 35px 87px 12px;
+    float: left;
+}
+
+#footer p
+{
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 37px;
+    color: #8d8d8d;
+    font-weight: bold;
+    border-left: 5px solid #efefef;
+    float: left;
+    line-height: 1.4;
+    margin: 112px 0 91px 0;
+    padding-left: 35px;
+}
+
+#footer ul li
+{
+    margin: 80px 27px 71px 73px;
+    float: right;
+}
