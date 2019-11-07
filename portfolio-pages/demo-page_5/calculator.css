@@ -1,0 +1,82 @@
+/* Программу Калькулятор написал Веселов Валерий. Это моя первая самостоятельная работа и демонстрация моих возможностей. 07.11.2019Чт */
+body /* тело */
+{
+    background: url('2a61ee2cd70c2a70e3f944535e5312a1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center; 
+}
+
+.wrapper /* обертка */
+{
+    float: left;
+    width: 262px;
+}
+
+.housing{ margin: 45% 0; } /* корпус */
+
+#scoreboard /* табло */
+{
+    width: 256px;
+    height: 256px;
+    border-bottom: rgba(255, 255, 255, 0);
+    text-align: right;
+    font-size: 30px;
+    font-weight: bold;
+    overflow-y: scroll;
+    word-wrap: break-word;
+}
+
+#scoreboard /* для браузера Internet Explorer */
+{
+    scrollbar-arrow-color: rgb(34, 52, 129); /* цвет стрелки *//* "морская" тема */
+    scrollbar-track-color: rgb(34, 52, 129); /* цвет подложки *//* "морская" тема */
+    scrollbar-face-color: rgb(26, 39, 99); /* цвет самой полосы *//* "морская" тема */
+    scrollbar-shadow-color: rgb(34, 52, 129); /* цвет разделяющей полосы *//* "морская" тема */
+}
+
+/* для браузеров Google Chrome, Opera, Яндекс */
+#scoreboard::-webkit-scrollbar{ width: 25px; }
+#scoreboard::-webkit-scrollbar-track{ background-color: rgba(255, 255, 255, 0); }
+#scoreboard::-webkit-scrollbar-thumb{ background-color: rgba(0, 0, 0, 0.171); }
+
+/* для браузера Firefox */
+#scoreboard{ scrollbar-color: rgba(0, 0, 0, 0.219) rgba(255, 255, 255, 0); }
+
+#scoreboard p
+{
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    margin: 20px 0 20px 20px;
+}
+#keyboard{ border-collapse: collapse; }
+
+.key
+{
+    width: 81px;
+    height: 81px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.key:hover{ cursor: pointer; }
+
+/* девичий */
+.styleBorderScore1{ border: 3px solid rgb(238, 238, 238); }
+.styleBorderKeys1{ border: 4px solid rgb(238, 238, 238); }
+.styleBackgroundScore1{ background-color: rgb(37, 37, 37); }
+.styleBackgroundKeys1{ background-color: rgb(248, 178, 248);}
+.styleTextKeys1{ color: rgb(255, 255, 255); }
+
+/* морской */
+.styleBorderScore2{ border: 3px solid rgb(235, 235, 235); }
+.styleBorderKeys2{ border: 4px solid rgb(235, 235, 235); }
+.styleBackgroundScore2{ background-color: rgb(34, 52, 129); }
+.styleBackgroundKeys2{ background-color: rgb(250, 249, 249); }
+.styleTextKeys2{ color: rgb(0, 0, 0); }
+
+/* древесный */
+.styleBorderScore3{ border: 3px solid rgb(134, 109, 26); }
+.styleBorderKeys3{ border: 4px solid rgb(134, 109, 26); }
+.styleBackgroundScore3{ background-color: rgb(17, 71, 47); }
+.styleBackgroundKeys3{ background-color: rgb(80, 80, 80); }
+.styleTextKeys3{ color: rgb(134, 109, 26); }
