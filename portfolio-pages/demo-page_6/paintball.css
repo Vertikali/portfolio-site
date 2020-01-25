@@ -1,0 +1,18 @@
+body
+{
+	background-color: #9aac9a;
+}
+
+h1
+{
+	text-align: center;
+}
+
+#game
+{
+	width: 600px;
+	margin: 0 auto;
+	padding: 15% 0;
+	border: none;
+}
+
