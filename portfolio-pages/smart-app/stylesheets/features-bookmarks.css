@@ -1,0 +1,49 @@
+/* Настройка закладок Функции */
+.tabs
+{
+  position: relative;
+  height: 600px;
+  clear: both;
+}
+.tab label
+{
+  padding: 30px 0px 30px 0;
+  position: relative;
+  width: 345px;
+  margin: 51px 0;
+  display: block;
+}
+.tabs label p
+{
+    margin-left: 130px;
+    font-size: 20px;
+    color: #9fa9a9;
+}
+.tabs label img
+{
+    position: absolute;
+    left: 40px;
+    top: 20px;
+    background-color: #9fa9a9;
+}
+.tab [type=radio] { display: none; }
+.content
+{
+  position: absolute;
+  top: 0;
+  left: 350px;
+  background: white;
+  right: 0;
+  bottom: 0;
+  border-left: 1px solid #ccc;
+}
+[type=radio]:checked ~ label
+{
+  border-right: 10px solid #5dca88;
+  z-index: 2;
+}
+[type=radio]:checked ~ label > img
+{
+    background-color: #5dca88;
+}
+[type=radio]:checked ~ label ~ .content { z-index: 1; }

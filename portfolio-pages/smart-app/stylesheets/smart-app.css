@@ -1,0 +1,343 @@
+/* Подключение шрифтов и других стилей*/
+@import url('reset.css');
+@import url('slider-parallax.css');
+@import url('features-bookmarks.css');
+@import url('slider-universal.css');
+@font-face
+{
+    font-family: Raleway;
+    src: url('../fonts/raleway_3.0/raleway-family-v3.0/Raleway-Bold.ttf');
+    src: url('../fonts/raleway_3.0/raleway-family-v3.0/Raleway-Light.ttf');
+}
+@font-face
+{
+    font-family: ProximaNova-Extrabld;
+    src: url('../fonts/proximanova-extrabold.otf');
+}
+@font-face
+{
+    font-family: Droid-Serif;
+    src: url('../fonts/Droid-Serif-Italic.ttf');
+}
+
+
+/* Общее */
+#wrapper { min-width: 1170px; }
+.vertical-symmetry { margin: 0 auto; }
+.width-informati { width: 1170px; }
+.width-author { width: 770px; }
+.sector-color { background-color: #f2f9fe; }
+h2, h3, p, li, .text-for-illustration span, a { font-family: Raleway, Arial, Sans-Serif; }
+h2
+{
+    font-size: 36px;
+    font-weight: bolder;
+    line-height: 1.2;
+}
+h3
+{
+    font-size: 24px;
+    font-weight: bold;
+}
+.block-clear { clear: both; }
+.text-for-illustration { width: 500px; }
+.text-for-illustration span
+{
+    font-size: 36px;
+    font-weight: lighter;
+    line-height: 1.2;
+}
+.text-for-illustration p
+{
+    line-height: 1.7;
+    margin-top: 47px;
+    margin-bottom: 54px;
+}
+.text-for-illustration a
+{
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 2.5;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    height: 54px;
+    width: 234px;
+    border-radius: 27px;
+    border: 3px solid;
+}
+.product-line
+{
+    border-top: 2px solid #949c9c;
+    width: 104px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+
+/* Заголовок */
+header
+{
+    padding: 40px 0;
+    color: #3c3d42;
+    display: block;
+}
+header ul li
+{
+    line-height: 1.6;
+    margin-right: 32px;
+    float: left;
+}
+header ul li:last-child { margin-right: 0; }
+header a { text-decoration: none; }
+header h1
+{
+    font: 30px ProximaNova-Extrabld, Arial, Sans-Serif;
+    color: #3c3d42;
+    line-height: .8;
+    margin-right: 32px;
+    float: left;
+}
+nav a
+{
+    color: #3c3d42;
+    font-size: 14px;
+}
+.header-author
+{
+    font-size: 18px;
+    float: right;
+}
+
+
+/* Слайдер */
+.slider
+{
+    height: 730px;
+    background-color: #0d68ae;
+}
+.slider h2, .slider span { color: #ffffff; }
+.slider p
+{
+    font-size: 14px;
+    color: #9dc7d1;
+}
+.slider a
+{
+    color: #ffffff;
+    border-color: #92b1b5;
+}
+.slider-text-size { padding: 180px 0 258px 0px; }
+
+
+/* Функции */
+.features { padding: 104px 0; }
+.features-text
+{
+    text-align: center;
+    width: 770px;
+    margin: 0 auto;
+}
+.features-text p, .content-text p
+{
+    font-size: 16px;
+    color: #afb8b8;
+    line-height: 1.5;
+    margin-top: 33px;
+}
+.features-text h2, .content-text h3 { color: #636c6c; }
+.content-text
+{
+    margin-left: 148px;
+    width: 625px;
+}
+.content img
+{
+    margin: 109px 0 83px 358px;
+    background-color: #5dc987;
+}
+
+
+/* Особенность-продукта */
+.product-feature h2, .product-geature h2 { color: #5dca88; }
+.product-feature span, .product-geature span { color: #8c9494; }
+.product-feature p, .product-geature p
+{
+    font-size: 16px;
+    color: #8c9494;
+}
+.product-feature a, .product-geature a
+{
+    color: #636c6c;
+    border-color: #aab2b4;
+}
+.product-text-size { padding: 164px 0 191px 0px; }
+.product-geature img, .product-feature .text-for-illustration { float: left; }
+.product-geature .text-for-illustration, .product-feature img { float: right; }
+.product-feature img
+{
+    margin-top: 81px;
+    margin-right: 143px;
+}
+.product-geature img
+{
+    margin-top: 81px;
+    margin-left: 21px;
+    margin-right: 83px;
+}
+.product-geature .text-for-illustration { margin-right: 70px; }
+
+
+/* Галерея */
+.gallery-head
+{
+    width: 770px;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    padding: 100px 0 80px 0;
+}
+.gallery-head h2 { color: #636c6c; }
+.gallery-head p
+{
+    font-size: 16px;
+    color: #afb8b8;
+    line-height: 1.2;
+    margin-top: 31px;
+}
+.gallery-mobile
+{
+    width: 292px;
+    height: 731px;
+    float: left;
+    margin-left: 25px;
+    margin-right: 58px;
+    margin-bottom: 117px;
+}
+.gallery-mobile p
+{
+    font-size: 14px;
+    color: #8c9494;
+    line-height: 1.2;
+    margin-top: 47px;
+    text-align: center;
+}
+
+
+/* Отзывы */
+.block-user
+{
+    height: 334px;
+    margin-top: 103px;
+    text-align: center;
+}
+.block-user h2 { color: #636c6c; }
+.block-user img { margin: 38px auto 40px auto; }
+.user-comment
+{
+    font-family: Droid-Serif, Serif;
+    font-style: Italic;
+    font-size: 24px;
+    color: #8c9494;
+}
+.user-name
+{
+    font-size: 24px;
+    color: #5dca88;
+    line-height: 3.4;
+}
+
+
+/* Новостная рассылка */
+.newsletter
+{
+    background-color: #f3f5f5;
+    height: 361px;
+}
+.newsletter-head
+{
+    width: 497px;
+    margin: 0 auto;
+    padding: 91px 0 56px 0;
+    height: 33px;
+}
+.newsletter-head h2
+{
+    color: #8c9494;
+    line-height: 1;
+}
+.newsletter-head img { float: left; }
+.newsletter-head h2 { float: right; }
+.newsletter-input { position: relative; }
+.newsletter-input input
+{
+    font-size: 14px;
+    color: #8c9494;
+    padding: 0 0 0 31px;
+    height: 56px;
+    width: 735px;
+    border-radius: 27px;
+    border: 2px solid #bac3c2;
+}
+.newsletter-input button
+{
+    font-family: ProximaNova-Bold, ProximaNova-Extrabld, Arial, Sans-Serif;
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 2.5;
+    text-decoration: none;
+    text-align: center;
+    padding: 0;
+    display: block;
+    height: 60px;
+    width: 166px;
+    border-radius: 27px;
+    border: 2px solid;
+    border-color: #5dca88;
+    background-color: #5dca88;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.newsletter-input :active, :hover, :focus { outline: 0; }
+
+
+/* Подвал */
+footer
+{
+    background-color: #2d312f;
+    min-width: 770px;
+}
+footer h3
+{
+    color: #8c9494;
+    text-align: center;
+    padding-top: 74px;
+    padding-bottom: 34px;
+}
+footer ul li { float: left; }
+footer ul li:last-child { margin-right: 0; }
+.links-user
+{
+    width: 280px;
+    margin: 0 auto;
+    height: 42px;
+}
+.links-user li { margin-right: 16px; }
+.links-site
+{
+    width: 456px;
+    margin: 0 auto;
+    padding: 70px 0 52px 0;
+    height: 10px;
+    display: block;
+}
+.links-site li { margin-right: 27px; }
+.links-site a
+{
+    font-size: 14px;
+    text-decoration: none;
+    color: #8c9494;
+}
