@@ -1,0 +1,111 @@
+/* Большой слайдер */
+.big-slider input[type=radio] { display: none; }
+
+
+/* Слайдер */
+.slider
+{
+	overflow: hidden;
+	position: relative;
+}
+.slider label { cursor: pointer; }
+
+
+/* Слайды */
+#About-Us__slide-1:checked ~ .slider .slides .inner { margin-left: 0; }
+#About-Us__slide-2:checked ~ .slider .slides .inner { margin-left: -100%; }
+#About-Us__slide-3:checked ~ .slider .slides .inner { margin-left: -200%; }
+#About-Us__slide-4:checked ~ .slider .slides .inner { margin-left: -300%; }
+#About-Us__slide-5:checked ~ .slider .slides .inner { margin-left: -400%; }
+
+#Testimonial__slide-1:checked ~ .slider .slides .inner { margin-left: 0; }
+#Testimonial__slide-2:checked ~ .slider .slides .inner { margin-left: -100%; }
+#Testimonial__slide-3:checked ~ .slider .slides .inner { margin-left: -200%; }
+#Testimonial__slide-4:checked ~ .slider .slides .inner { margin-left: -300%; }
+#Testimonial__slide-5:checked ~ .slider .slides .inner { margin-left: -400%; }
+.slides .inner { transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000); }
+.slides .inner
+{
+	width: 500%;
+	height: 1px;
+}
+.slides .slide
+{
+	width: 20%;
+	float: left;
+	display: block;
+	height: 100%;
+}
+
+
+/* Переключатели Стрелки */
+.controls
+{
+	margin: 0;
+	width: 100%;
+	height: 50px;
+	z-index: 3;
+	position: relative;
+}
+.controls label
+{
+	transition: opacity 0.2s ease-out;
+	display: none;
+	width: 50px;
+	height: 50px;
+	opacity: 1;
+}
+.controls label:hover { opacity: 0.4; }
+#Testimonial__slide-1:checked ~ .slider .controls label:nth-child(2), 
+#Testimonial__slide-2:checked ~ .slider .controls label:nth-child(3), 
+#Testimonial__slide-3:checked ~ .slider .controls label:nth-child(4), 
+#Testimonial__slide-4:checked ~ .slider .controls label:nth-child(5), 
+#Testimonial__slide-5:checked ~ .slider .controls label:nth-child(1)
+{
+	background: url('../images/slider__arrow-green-right.png') no-repeat;
+	float: right;
+	margin: 0 10px 0 0;
+	display: block;
+	box-shadow: 0 0 10px 5px #e9ebeb;
+}
+#Testimonial__slide-1:checked ~ .slider .controls label:nth-child(5), 
+#Testimonial__slide-2:checked ~ .slider .controls label:nth-child(1), 
+#Testimonial__slide-3:checked ~ .slider .controls label:nth-child(2), 
+#Testimonial__slide-4:checked ~ .slider .controls label:nth-child(3), 
+#Testimonial__slide-5:checked ~ .slider .controls label:nth-child(4)
+{
+	background: url('../images/slider__arrow-white-left.png') no-repeat;
+	float: left;
+	margin: 0 0 0 515px;
+	display: block;
+	box-shadow: 0 0 10px 5px #e9ebeb;
+}
+
+
+/* Переключатели Пули */
+.bullets
+{
+	margin: 0;
+	text-align: center;
+}
+.bullets label
+{
+	border-radius: 5px;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: #bbb;
+}
+#About-Us__slide-1:checked ~ .slider .bullets label:nth-child(1), 
+#About-Us__slide-2:checked ~ .slider .bullets label:nth-child(2), 
+#About-Us__slide-3:checked ~ .slider .bullets label:nth-child(3), 
+#About-Us__slide-4:checked ~ .slider .bullets label:nth-child(4),
+#About-Us__slide-5:checked ~ .slider .bullets label:nth-child(5)
+{ background: #71f6eb; }
+
+#Testimonial__slide-1:checked ~ .slider .bullets label:nth-child(1), 
+#Testimonial__slide-2:checked ~ .slider .bullets label:nth-child(2), 
+#Testimonial__slide-3:checked ~ .slider .bullets label:nth-child(3), 
+#Testimonial__slide-4:checked ~ .slider .bullets label:nth-child(4),
+#Testimonial__slide-5:checked ~ .slider .bullets label:nth-child(5)
+{ background: #71f6eb; }

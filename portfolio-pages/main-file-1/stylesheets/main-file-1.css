@@ -1,0 +1,575 @@
+/* подключение дополнительных стилей */
+@import url('../stylesheets/reset.css');
+@import url('../stylesheets/slider.css');
+
+/* Подключение шрифтов */
+@font-face
+{
+    font-family: Montserrat;
+    src: url('../fonts/11951.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: Montserrat;
+    src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: Merriweather;
+    src: url('../fonts/Merriweather/Merriweather-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: Merriweather;
+    src: url('../fonts/Merriweather/Merriweather-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: Merriweather;
+    src: url('../fonts/Merriweather/Merriweather-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face
+{
+    font-family: Raleway;
+    src: url('../fonts/raleway_3.0/raleway-family-v3.0/Raleway-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Общее по умолчанию*/
+.symmetric
+{
+    width: 1140px;
+    margin: 0 auto;
+}
+.clear-block { clear: both; }
+h1
+{
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    color: #505050;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 150px;
+}
+h2
+{
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 38px;
+    text-transform: uppercase;
+    color: #000000;
+    line-height: .8;
+    margin-bottom: 16px;
+    text-align: center;
+}
+h3
+{
+    font-family: Merriweather, Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+h4
+{
+    font-family: Merriweather, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #000000;
+}
+h5
+{
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #7d8082;
+}
+p
+{
+    font-family: Raleway, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+
+/* Для некоторых секций */
+.section-header
+{
+    padding-top: 124px;
+    height: 58px;
+    padding-bottom: 124px;
+    margin: 0 auto;
+}
+.section-header p
+{
+    font-family: Merriweather, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #000000;
+    line-height: .9;
+    text-align: center;
+}
+.Works, .Team-Part, .Logo, .To-contact-us { background-color: #ffffff; }
+
+
+/* Общее для Работы и Командная Часть */
+.tiles
+{
+    display: grid;
+    justify-content: space-between;
+    align-content: space-between;
+    grid-template-columns: 370px 370px 370px;
+    grid-template-rows: auto;
+}
+
+
+/* Общее для Мост Сервис и Свидетельство */
+.Most-Service, .Testimonial
+{
+    min-width: 1170px;
+    background-color: #f9fbfb;
+}
+
+
+/* Общее для Командная Часть и Свидетельство */
+.Team-Part__remark h3 span, .Testimonial__text h3 span
+{
+    font-family: Merriweather;
+    font-style: italic;
+    font-size: 15px;
+    color: #767070;
+    margin-left: 6px;
+}
+.Team-Part__remark-text p, .Testimonial__message p
+{
+    margin-top: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+
+/* Шапка */
+header
+{
+    min-width: 1170px;
+    background-color: #eff0f2;
+}
+.header__top
+{
+    height: 112px;
+    width: 100%;
+}
+.header__logo
+{
+    margin-top: 64px;
+    float: left;
+}
+.header__menu
+{
+    margin-top: 80px;
+    float: right;
+}
+.header__name
+{
+    width: 1005px;
+    height: 294px;
+    margin: 0 auto;
+    padding-top: 204px;
+    padding-bottom: 195px;
+    position: relative;
+}
+.header__name h1 span
+{
+    background: #b2f2ee;
+}
+.header__link
+{
+    display: block;
+    width: 228px;
+    height: 49px;
+    border: 2px solid #777778;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 2.6;
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 18px;
+    color: #000000;
+    margin: 0 auto;
+}
+.header__full-glass
+{
+    position: absolute;
+    bottom: 135px;
+    right: 26px;
+}
+
+
+/* Работы */
+.Works img
+{
+    width: 370px;
+    height: 359px;
+}
+.Works .tiles
+{
+    height: 731px;
+    margin-bottom: 125px;
+}
+
+
+/* О нас */
+.About-Us
+{
+    min-width: 1170px;
+    background-color: #f8fafa;
+    height: 985px;
+}
+.About-Us__images
+{
+    float: left;
+    width: 479px;
+    height: 572px;
+    margin-left: 51px;
+    margin-right: 80px;
+}
+.About-Us__images img
+{
+    width: 403px;
+    height: cover;
+    margin-top: 20px;
+    margin-left: 40px;
+    display: block;
+    box-shadow: 0 0 20px 5px #e9ebeb;
+    position: absolute;
+    z-index: 2;
+}
+.About-Us__images-background
+{
+    width: 479px;
+    height: 412px;
+    background-color: #eff0f2;
+    margin-top: 60px;
+    position: absolute;
+    z-index: 1;
+}
+.About-Us__text
+{
+    float: right;
+    width: 474px;
+    height: 414px;
+    margin-top: 30px;
+    margin-right: 53px;
+    margin-bottom: 158px;
+}
+.About-Us__text p
+{
+    line-height: 1.6;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.About-Us__correction-bullets { margin-top: 555px; }
+
+
+/* Мост Сервис */
+.Most-Service__tiles { padding-bottom: 125px; }
+.Most-Service__tile
+{
+    position: relative;
+    height: 370px;
+    display: inline-flex;
+    margin-bottom: 12px;
+    margin-right: 9px;
+}
+.Most-Service__tile-right { margin-right: 0; }
+.Most-Service__tile-bottom { margin-bottom: 0; }
+.Most-Service__text
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(12, 12, 12, 0.5);
+}
+.Most-Service__text-min, .Most-Service__text-max
+{
+    position: absolute;
+    bottom: 0;
+    padding-top: 63px;
+    padding-left: 66px;
+    padding-right: 116px;
+    padding-bottom: 56px;
+}
+.Most-Service__text-min
+{
+    display: block;
+    color: #f9fbfb;
+}
+.Most-Service__text-max { display: none; }
+.Most-Service__text:hover { background-color: rgba(113, 245, 234, 0.966); }
+.Most-Service__text:hover .Most-Service__text-min { display: none; }
+.Most-Service__text:hover .Most-Service__text-max { display: block; }
+.Most-Service__text-max p, .Most-Service__text-min p
+{
+    margin-top: 27px;
+    line-height: 1.6;
+}
+
+
+/* Командная часть */
+.Team-Part__persona
+{
+    width: 370px;
+    height: 440px;
+}
+.Team-Part .tiles { height: 894px; }
+.Team-Part .tiles { margin-bottom: 118px; }
+.Team-Part__tile
+{
+    position: relative;
+    display: inline-flex;
+    height: 440px;
+}
+.Team-Part__delta
+{
+    position: absolute;
+    left: 39px;
+    bottom: 256px;
+    border: 11px solid transparent; border-bottom: 19px solid #71f6ec;
+}
+.Team-Part__balloon
+{
+    position: absolute;
+    left: 18px;
+    bottom: 15px;
+    width: 335px;
+    height: 241px;
+    background-color: #71f6ec;
+
+}
+.Team-Part__delta, .Team-Part__balloon { display: none; }
+.Team-Part__tile:hover .Team-Part__delta, .Team-Part__tile:hover .Team-Part__balloon { display: block; }
+.Team-Part__remark
+{
+    width: 243px;
+    height: 156px;
+    margin-top: 43px;
+    margin-right: 54px;
+    margin-bottom: 42px;
+    margin-left: 38px;
+}
+.Team-Part__remark h3, .Team-Part__remark p
+{
+    float: left;
+}
+.Team-Part__remark-links img
+{
+    height: 12px;
+    float: left;
+    margin-right: 12px;
+}
+
+
+/* Свидетельство */
+.Testimonial { height: 923px; }
+.Testimonial__images
+{
+    float: left;
+    width: 393px;
+    height: 507px;
+    margin-left: 13px;
+    margin-right: 80px;
+}
+.Testimonial__images img
+{
+    width: 349px;
+    height: cover;
+    margin-top: 35px;
+    margin-left: 23px;
+    display: block;
+    box-shadow: 0 0 20px 5px #e9ebeb;
+    position: absolute;
+    z-index: 2;
+}
+.Testimonial__images-background
+{
+    width: 393px;
+    height: 362px;
+    background-color: #eff0f2;
+    margin-top: 60px;
+    position: absolute;
+    z-index: 1;
+}
+.Testimonial__texts-background
+{
+    width: 666px;
+    height: 362px;
+    background-color: #eff0f2;
+    margin-top: 60px;
+    position: absolute;
+    z-index: 1;
+}
+.Testimonial__texts { height: 520px; }
+.Testimonial__text
+{
+    margin-top: 157px;
+    position: absolute;
+    z-index: 2;
+    width: 500px;
+    height: 192px;
+    margin-bottom: 69px;
+    margin-left: 86px;
+    margin-right: 81px;
+}
+.Testimonial__text h3, .Testimonial__message p { text-align: center; }
+.Testimonial__five-stars
+{
+    width: 104px;
+    margin: 0 auto;
+}
+.Testimonial__correction-bullets { margin-top: 490px; }
+.Testimonial__correction-controls { margin-top: 456px; }
+
+
+/* Логотип */
+.logo { height: 387px; }
+.logo img
+{
+    height: 172px;
+    width: 1170px;
+}
+
+
+/* Связаться с нами */
+.To-contact-us
+{
+    height: 705px;
+    background: url(../images/To-contact-us__background.jpg) no-repeat;
+    background-size: cover;
+    min-width: 1170px;
+}
+.To-contact-us__letter, .To-contact-us__contact-details
+{
+    background: hsla(202, 100%, 8%, 0.629);
+    height: 460px;
+    margin-top: 121px;
+    margin-bottom: 123px;
+}
+.To-contact-us__letter
+{
+    width: 614px;
+    float: left;
+}
+.To-contact-us__letter-input input, .To-contact-us__letter-input textarea
+{
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 15px;
+    color: #b6bcc0;
+    width: 550px;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #b6bcc0;
+    border-left: 0;
+    padding: 0;
+}
+.To-contact-us__letter-input input:-moz-placeholder { color: #b6bcc0; }
+.To-contact-us__letter-input input::-webkit-input-placeholder { color: #b6bcc0; }
+.To-contact-us__letter-input textarea:-moz-placeholder { color: #b6bcc0; }
+.To-contact-us__letter-input textarea::-webkit-input-placeholder { color: #b6bcc0; }
+.To-contact-us__letter-input input
+{
+    height: 56px;
+    background: none;
+}
+.To-contact-us__letter-input textarea
+{
+    height: 103px;
+    resize: none;
+    background: none;
+    padding: 15px 0;
+    line-height: 2;
+}
+.To-contact-us button
+{
+    width: 244px;
+    height: 53px;
+    background: #6eeee4;
+    border: 1px solid #6eeee4;
+    border-radius: 5px;
+    margin-top: 38px;
+    font: 18px Montserrat;
+    font-weight: normal;
+    color: #000000;
+    cursor: pointer;
+}
+.To-contact-us__contact-details
+{
+    width: 500px;
+    float: right;
+}
+.To-contact-us__edging { padding: 26px 31px; }
+.To-contact-us__details-edging { margin: 26px 31px; }
+.To-contact-us__details-edging p, .To-contact-us__details-edging a
+{
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 15px;
+    color: #b6bcc0;
+    line-height: 1.5;
+    text-decoration: none;
+}
+.To-contact-us__map-edging { margin: 26px 22px 19px 22px; }
+
+
+/* Подвал */
+footer
+{
+    min-width: 1170px;
+    background-color: #262b2e;
+    text-align: center;
+}
+.footer__centered
+{
+    margin: 0 auto;
+    padding: 93px 0 89px 0;
+    height: 130px;
+    width: 401px;
+}
+.footer__links
+{
+    width: 205px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 19px 0 43px 0;
+}
+.footer__link
+{
+    float: left;
+    margin-right: 7px;
+    width: 46px;
+    height: 40px;
+    position: relative;
+}
+.footer__link:last-child{ margin-right: 0; }
+.footer__link-active
+{
+    display: none;
+    position: absolute;
+    top: 0;
+}
+.footer__link:hover .footer__link-active{ display: block; }
+.footer__text { color: #7d8082; }
