@@ -75,17 +75,19 @@ a
     margin-top: 20px;
     width: 970px;
     background: #a01c1c;
-}
-
-.controls p, .controls progress
-{
-    float: left;
-    margin: 0 10px;
+    height: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 progress 
 {
     width: 85%;
+    height: 14px;
+    padding: 0;
+    margin: 0;
 }
 
 .buttons

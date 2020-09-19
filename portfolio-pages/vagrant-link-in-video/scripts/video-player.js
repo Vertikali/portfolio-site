@@ -10,6 +10,12 @@ video = document.querySelector('#video-player');    // получение дан
 
 allTime = video.duration;     // полное время записи в секундах
 
+video.onloadedmetadata = function() // исполняется лишь один раз - при первой загрузке страницы
+{
+    allTime = video.duration;     // полное время записи в секундах
+    document.querySelector('#all').innerHTML = allTime.toFixed(0);  // показ всей длительности видеозаписи в секундах  
+};
+
 ////////////////////////////////////////////////////////
 
 // Играть видео
