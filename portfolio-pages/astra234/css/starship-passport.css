@@ -1,0 +1,94 @@
+/* анимированная картинка изображающая звездолёт на космической орбите */
+/* облочка демонстратора звездолёта */
+.starship-demonstrator 
+{
+    overflow: hidden;
+    position: relative;
+    width: 620px;
+    height: 364px;
+}
+
+/* фон демонстратора */
+.picture-bg 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* модель звездолёта */
+.picture-sub 
+{
+    position: absolute;
+    width: 320px;
+    height: 295px;
+    top: 20px;
+    left: -260px;
+    z-index: 2;
+    transition: left 30s linear;
+}
+
+/* реакция демонстратора на указатель мыши */
+.starship-demonstrator:hover .picture-sub 
+{
+    left: 280px;
+    transition: left 1.5s cubic-bezier(0.000, 1.005, 0.675, 1.000);
+}
+
+/* регулируемый ползунок параметров звездолёта */
+/*источник кода ползунка https://html5css.ru/howto/howto_js_rangeslider.php */
+/* Ширина и высота наружного контейнера */
+.slidecontainer 
+{
+    width: 620px;
+    height: 25px;
+}
+
+/* убрал стандартные отступы */
+.slidecontainer input 
+{ margin: 0; }
+
+/* Сам ползунок */
+.slider 
+{
+    -webkit-appearance: none;  /* Переопределить стили CSS по умолчанию */
+    appearance: none;
+    width: 100%; /* Полная ширина */
+    height: 25px; /* Указанная высота */
+    background: #202020; /* Серый фон */
+    outline: none; /* Удалить контур */
+    /*opacity: 0.7; /* Установить прозрачность (для эффектов наведения мыши при наведении) */
+    /*-webkit-transition: .2s; /* 0.2 секунды перехода при наведении */
+    /*transition: opacity .2s;*/
+}
+
+/* Эффекты наведения мыши */
+.slider:hover 
+{ opacity: 1; } /* Полностью отображается при наведении мыши */
+
+/* Дескриптор ползунка (используйте -webkit- (Chrome, Opera, Safari, Edge) и -moz- (Firefox), чтобы переопределить внешний вид по умолчанию) */ 
+.slider::-webkit-slider-thumb 
+{
+    -webkit-appearance: none; /* Переопределить внешний вид по умолчанию */
+    appearance: none;
+    width: 25px; /* Установите определенную ширину ручки ползунка */
+    height: 25px; /* Высота ручки ползунка */
+    background: #565657; /* Зеленый фон */
+    cursor: pointer; /* Курсор при наведении */
+    border-top: 4px solid #474747;
+    border-right: 4px solid #333;
+    border-bottom: 4px solid #292929;
+    border-left: 4px solid #333;
+}
+.slider::-moz-range-thumb 
+{
+    width: 25px; /* Установите определенную ширину ручки ползунка */
+    height: 25px; /* Высота ручки ползунка */
+    background: #565657; /* Зеленый фон */
+    cursor: pointer; /* Курсор при наведении */
+    border-top: 4px solid #474747;
+    border-right: 4px solid #333;
+    border-bottom: 4px solid #292929;
+    border-left: 4px solid #333;
+}

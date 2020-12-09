@@ -1,0 +1,112 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
+header, nav, footer, article, aside, section {display: block;}
+
+/* Название звездолёта в шапке страниц */
+h1 
+{
+    font-family: 'Black Ops One', cursive;
+    font-size: 60px;
+    color: #b10707;
+    padding-top: 50px;
+}
+
+/* Название страниц на табличках-подписях */
+h2 
+{
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 20px;
+    color: #161616;
+    text-align: center;
+    padding: 12px;
+}
+
+/* Названия членов экипажа стр.Штат звездолёта */
+h3 
+{ font-size: 30px; }
+
+/* табличка-подпись */
+.nameplate 
+{
+    background: url('../images/1380804593.jpg');
+    border: 1px solid #525252;
+    border-radius: 8px;
+    width: 56%;
+    height: 40px;
+    box-shadow: 1px 2px 0 0 #292929;
+    float: right;
+}
+
+/* сетка приборной панели */
+.grid-dashboard { margin: 10px auto; }
+
+/* приборная панель вверх */
+.dashboard-top 
+{
+    width: 620px;
+    height: 44px;
+}
+
+/* кнопка Выхода на стр.Главная */
+/* источник кода кнопки Выход https://html5css.ru/howto/howto_css_round_buttons.php */
+.exit-button 
+{
+    background-color: #8f0c0c;
+    border: 5px solid #640909;
+    color: #ffffff8a;
+    padding: 4px 4px 4px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 50px;
+    width: 26px;
+    height: 26px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 0.6;
+    box-shadow: 4px 4px 2px 1px rgba(32, 32, 32, 0.438);
+}
+
+/* при наведении указателя мыши кнопка меняет оформление */
+.exit-button:hover 
+{
+    background-color: #db1515;
+    color: white;
+    box-shadow: 0px 0px 8px 4px rgba(173, 15, 15, 0.685);
+}
+
+/* общее для всех страниц оформление*/
+body 
+{
+    background-image: url('../images/322d40587.jpg');
+    background-color: #515152;
+}
+
+/* основа */
+.basis 
+{
+    width: 640px;
+    margin: 0 auto;
+}
+
+/* корпус устройства */
+.device-body 
+{
+    background-image: url('../images/metal-texture_(14).jpg');
+    background-color: #7b7d7e;
+    border: 5px solid #565657;
+    border-radius: 10px;
+    box-shadow: 1px 3px 0 0 #313131;
+}
+
+/* впадина */
+.trough 
+{
+    border-top: 4px solid #2c2c2c;
+    border-left: 4px solid #484849;
+    border-right: 4px solid #636363;
+    border-bottom: 4px solid #767677;
+}

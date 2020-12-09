@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Marck+Script|Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gabriela&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pangolin&display=swap');
+
+/* оболочка оформления бегущей строки */
+.text-display 
+{
+    white-space:nowrap;
+    overflow:hidden;
+    background-color: #000;
+    height: 30px;
+}
+
+/* стиль текста бегущей строки */
+.text-display span 
+{
+    color:#07b9b9;
+    font-size:22px;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold;
+    display:inline-block;
+    padding-left:100%;
+    -webkit-animation: text-display 15s infinite linear; /* параметры смещения текста */
+    animation: text-display 15s infinite linear; /* параметры смещения текста */
+    line-height: 1.4;
+}
+
+/* крайние кадры смещения текста */
+@-webkit-keyframes text-display 
+{
+    0%{-webkit-transform: translate(0, 0);}
+    100%{-webkit-transform: translate(-100%, 0);}
+}
+@keyframes text-display 
+{
+    0%{transform: translate(0, 0);}
+    100%{transform: translate(-100%, 0)}
+}
+
+/* блок оформления кнопок */
+/* источник кода кнопок http://htmlbook.ru/practical/ssylka-kak-knopka */
+.transition-button 
+{
+    border: 5px solid #333; /* Рамка */
+    display: inline-block;
+    padding: 5px 15px; /* Поля */
+    text-decoration: none; /* Убираем подчёркивание */
+    color: #000; /* Цвет текста */
+    width: 91.5%;
+    background-color: #73756d;
+    line-height: 1.4;
+    border-top: 4px solid #474747;
+    border-right: 4px solid #333;
+    border-bottom: 4px solid #292929;
+    border-left: 4px solid #333;
+}
+
+/* при наведении указателя мыши меняется оформление кнопок */
+.transition-button:hover 
+{
+    box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Тень */
+    background: linear-gradient(to bottom, #fcfff4, #e9e9ce); /* Градиент */
+    color: rgb(0, 170, 43);
+}
+
+/* оболочка клавиатуры */
+.keyboard 
+{
+    width: 59%;
+    border: 5px solid #565657;
+}
+
+/* стилизация названий клавиш клавиатуры */
+.keyboard a 
+{
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 20px;
+    color: #161616;
+    text-align: center;
+    padding: 12px;
+}
+
+/* подвал страницы */
+footer 
+{
+    padding: 20px 0px;
+    font-family: 'Pangolin', cursive;
+    font-size: 20px;
+    /*font-weight: bold;*/
+    color: #0a0099;
+}
+
+/* параметры контактных данных */
+.autograph 
+{
+    margin-left: 53%;
+    width: 30%;
+    height: 50px;
+}
+
+/* скрыть эл.адрес */
+.autograph .ag2 
+{ display: none; }
+
+/* стиль оформления эл.адреса */
+.autograph a 
+{
+    text-decoration: none;
+    color: #0a0099;
+}
+
+/* при наведении мыши появляется эл.адрес */
+.autograph:hover .ag2 
+{ display: block; }

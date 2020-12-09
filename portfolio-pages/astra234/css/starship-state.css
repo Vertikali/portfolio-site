@@ -1,0 +1,129 @@
+/* картотека-оболочка */
+.file-cabinet 
+{
+    width: 620px;
+    height: 500px;
+    position: relative;
+    clear: both;
+}
+
+/* оболочка закладок */
+.tabs 
+{
+    position: relative;
+    height: 490px;
+    clear: both;
+    width:96%;
+    margin: 25px auto;
+}
+
+/* прижать корешёк каждой закладки к левому краю */
+.tab 
+{ float: left; }
+
+/* оформление корешка каждой закладки */
+.tab label 
+{
+    background: #eee;
+    padding: 10px;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    margin-left: -1px;
+    position: relative;
+    left: 1px;
+    box-shadow: 4px 4px 2px 1px rgba(2, 2, 2, 0.2);
+}
+.tab [type=radio] /* скрыть стандартную радиокнопку */
+{ display: none; }
+
+/* оформление содержимого каждой закладки */
+.content 
+{
+    position: absolute;
+    top: 28px;
+    left: 0;
+    background: white;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 4px 4px 2px 1px rgba(32, 32, 32, 0.2);
+}
+
+/* оформление иллюстрации к содержимому закладки */
+.content img 
+{
+    height: 270px;
+    float: left;
+    margin-right: 16px;
+}
+
+/* оформление корешка отмеченной закладки */
+[type=radio]:checked ~ label 
+{
+    background: white;
+    border-bottom: 1px solid white;
+    z-index: 2;
+}
+
+/* оформление содержимого отмеченной закладки */
+[type=radio]:checked ~ label ~ .content 
+{ z-index: 3; }
+
+/* оформление прозрачной перегородки картотеки */
+.diaphanous 
+{
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    height: 81%;
+    background: linear-gradient(to top, #fefcea48, #f1db3646);
+    z-index: 4;
+    border-top: 2px solid #f1db367e;
+}
+
+/* оформление оправы прозрачной перегородки */
+.frame1 /* левая полоска */
+{
+    position: absolute;
+    z-index: 5;
+    top: 90px;
+    left: 0;
+    width: 15px;
+    height: 82%;
+    background-color: #565657;
+    border-left: 4px solid #636363;
+}
+.frame2 /* правая полоска */
+{
+    position: absolute;
+    z-index: 5;
+    top: 90px;
+    right: 0;
+    width: 15px;
+    height: 82%;
+    background-color: #565657;
+    border-right: 4px solid #373738;
+}
+.frame3 /* нижняя полоска */
+{
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    left: 0;
+    width: 98.7%;
+    height: 15px;
+    background-color: #565657;
+    border-left: 4px solid #636363;
+    border-bottom: 4px solid #1a1a1a;
+    border-right: 4px solid #373738;
+}
+
+/* оформление текста содержимого закладки */
+p 
+{
+    font-size: 22px;
+    margin-top: 16px;
+}

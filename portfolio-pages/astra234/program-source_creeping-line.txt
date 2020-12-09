@@ -1,0 +1,4 @@
+Источник программы бегущая строка
+Program source creeping line
+
+http://gnatkovsky.com.ua/begushhaya-stroka-na-sajt-s-pomoshhyu-css.html
