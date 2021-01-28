@@ -1,0 +1,167 @@
+/* 
+ * Корректировка страницы для экранов средних размеров.
+ * Точка включения этих настроек от 871px до 1024px.
+ */
+
+/* Шапка сайта */
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(var(--main-w) * 7.12);
+    padding: calc(var(--main-w) * 2.34) calc(var(--main-w) * 2.53) calc(var(--main-w) * 2.05) calc(var(--main-w) * 2.53);
+}
+.name img
+{
+    width: calc(var(--main-w) * 4.29);
+    height: calc(var(--main-w) * 4.29);
+}
+.name h1 
+{
+    font-size: 2.5em;
+    margin-left: calc(var(--main-w) * 1.46);
+}
+
+/* Мени в шапке сайта */
+.menu-toggle
+{
+    display: none;
+}
+.menu-dropdown
+{
+    display: block;
+    position: static;
+}
+.menu
+{
+    margin-top: calc(var(--main-w) * 1.9);
+}
+.nav-menu
+{
+    border: 0;
+    background-color: transparent;
+}
+.nav-menu ul
+{
+    display: flex;
+    border: calc(var(--main-w) * 0.25) solid transparent;
+}
+.nav-menu ul li
+{
+    padding: 0 calc(var(--main-w) * 1.75);
+}
+.nav-menu ul li a 
+{
+    flex: 1;
+    padding: calc(var(--main-w) * 1.4) 0;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #6c6c6c;
+    border: calc(var(--main-w) * 0.25) solid transparent;
+}
+.nav-menu ul li + li 
+{
+    border-top: 0;
+}
+.nav-menu ul li a:hover
+{
+    border-bottom: calc(var(--main-w) * 0.25) solid #5094f2;
+}
+
+/* Рекламный баннер */
+.banner
+{
+    min-width: calc(var(--main-w) * 110);
+    height: calc(var(--main-w) * 38.43);
+    background-size: cover;
+    background-repeat: repeat;
+}
+.banner_text p
+{
+    width: calc(var(--main-w) * 30.71);
+}
+.banner_text button
+{
+    width: calc(var(--main-w) * 16.79);
+    height: calc(var(--main-w) * 4);
+}
+.banner_text button img
+{
+    width: calc(var(--main-w) * 2.24);
+}
+.banner_text button span
+{
+    font-size: 2em;
+}
+
+/* Маленькие разделы  */
+.pack-background
+{
+    border-bottom: 1px solid #cccccc;
+}
+.pack
+{
+    flex-direction: row;
+}
+.pack_section
+{
+    border-bottom: 0;
+    padding: calc(var(--main-w) * 6.34) calc(var(--main-w) * 5);
+    flex-direction: column;
+}
+.pack_section img
+{
+    width: calc(var(--main-w) * 18.16);
+}
+.pack_section_text
+{
+    margin: 0;
+    text-align: center;
+}
+.pack_section_text h5
+{
+    font-size: 1.7em;
+    margin: calc(var(--main-w) * 2.73) 0 calc(var(--main-w) * 1.56) 0;
+    text-align: center;
+}
+.pack_section_text p
+{
+    font-size: 1em;
+}
+
+/* Большая статья */
+.article
+{
+    flex-direction: row;
+    padding: calc(var(--main-w) * 5.17) 0;
+}
+.article_image h2
+{
+    width: calc(var(--main-w) * 43.94);
+}
+.article_image img
+{
+    width: calc(var(--main-w) * 40);
+    margin: calc(var(--main-w) * 3.22) 0 0 0;
+}
+.article_text h4
+{
+    font-size: 2.2em;
+    margin: calc(var(--main-w) * 5.5) 0 0 calc(var(--main-w) * 4.68);
+
+}
+.article_text p
+{
+    font-size: 1.3em;
+    margin: calc(var(--main-w) * 3) calc(var(--main-w) * 4.68) 0 calc(var(--main-w) * 4.68);
+}
+
+
+/* Подвал сайта */
+footer
+{
+    height: calc(var(--main-w) * 9.08);
+    padding: calc(var(--main-w) * 3.32) 0 calc(var(--main-w) * 4.29) 0;
+}

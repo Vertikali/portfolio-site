@@ -1,0 +1,279 @@
+/* 
+ * Корректировка страницы для экранов малых размеров.
+ * Точка включения этих настроек от 0 до 871px.
+ */
+
+/* Подключение других стилей и шрифтов */
+@import url('../stylesheets/reset.css');
+@font-face
+{
+    font-family: 'SegoeWP';
+    src: url('../fonts/Segoe WP Light.ttf');
+}
+@font-face
+{
+    font-family: 'SegoeWPN';
+    src: url('../fonts/SegoeWPN-Light.ttf');
+}
+
+/* Общее для всех страниц */
+:root
+{
+    box-sizing: border-box;
+    font-size: calc(1vw + 0.3em);
+    --main-w: 1vw;
+}
+*,
+*::before,
+*::after
+{
+    box-sizing: inherit;
+}
+body
+{
+    margin: 0;
+    background-color: #ffffff;
+}
+a
+{
+    text-decoration: none;
+}
+.header, .banner
+{
+    font-family: 'SegoeWP', sans-serif;
+}
+.pack, .article, footer
+{
+    font-family: 'SegoeWPN';
+}
+.pack_section, .article-background
+{
+    border-bottom: 1px solid #cccccc;
+}
+
+/* Шапка сайта */
+.header
+{
+    height: calc(var(--main-w) * 13.9);
+    padding: calc(var(--main-w) * 3.43) calc(var(--main-w) * 4.68) calc(var(--main-w) * 2.34) calc(var(--main-w) * 4.68);
+}
+
+.name
+{
+    display: flex;
+}
+.name img
+{
+    width: calc(var(--main-w) * 8.12);
+    height: calc(var(--main-w) * 8.12);
+}
+
+.name h1
+{
+    color: #000000;
+    font-size: 4.1em;
+    margin-left: calc(var(--main-w) * 2.81);
+    line-height: 1.1;
+}
+
+/* Мени в шапке сайта */
+.menu
+{
+    position: relative;
+}
+.menu-toggle
+{
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+.menu-toggle img
+{
+    position: absolute;
+    top: calc(var(--main-w) * -7.5);
+    right: 0;
+    width: calc(var(--main-w) * 9.06);
+    height: calc(var(--main-w) * 6.87);
+    cursor: pointer;
+}
+.menu-dropdown
+{
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0;
+}
+.menu.is-open .menu-dropdown
+{
+    display: block;
+}
+.nav-menu
+{
+    margin: 0;
+    padding-left: 0;
+    border: 1px solid #ccc;
+    list-style: none;
+    background-color: #5094f2;
+    color: #fff;
+}
+.nav-menu > ul > li + li
+{
+    border-top: 1px solid #ccc;
+}
+.nav-menu > ul > li > a
+{
+    display: block;
+    font-size: 3.5em;
+    padding: calc(var(--main-w) * 6) calc(var(--main-w) * 11);
+    color: #fff;
+    font-weight: normal;
+}
+
+/* Рекламный баннер */
+.banner-background
+{
+    height: calc(var(--main-w) * 38.43);
+    background-image: url('../images/banner_background_none.png');
+    background-size: cover;
+}
+.banner
+{
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+.banner_image
+{
+    height: calc(var(--main-w) * 33.28);
+    padding: 0 calc(var(--main-w) * 10.15) 0 calc(var(--main-w) * 5.93);
+    margin-bottom: calc(var(--main-w) * -2.03);
+}
+.banner_text
+{
+    color: #ffffff;
+}
+.banner_text h3
+{
+    font-size: 2.8em;
+    line-height: .7;
+}
+.banner_text p
+{
+    font-size: 2em;
+    width: calc(var(--main-w) * 36.71);
+    margin: calc(var(--main-w) * 2) 0 calc(var(--main-w) * 4.1) 0;
+    line-height: 1.6;
+}
+.banner_text button
+{
+    width: calc(var(--main-w) * 36.71);
+    height: calc(var(--main-w) * 8.28);
+    background-color: #5094f2;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.banner_text button img
+{
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: calc(var(--main-w) * 5.15);
+}
+.banner_text button span
+{
+    font-size: 2.6em;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+/* Маленькие разделы  */
+.pack
+{
+    display: flex;
+    flex-direction: column;
+}
+.pack_section
+{
+    padding: calc(var(--main-w) * 3.75) calc(var(--main-w) * 6.25);
+    display: flex;
+    align-items: center;
+}
+.pack_section img
+{
+    display: block;
+    width: calc(var(--main-w) * 21.87);
+    height: contain;
+}
+.pack_section_text
+{
+    margin: 0 calc(var(--main-w) * 3.75);
+}
+.pack_section_text h5
+{
+    font-weight: bold;
+    font-size: 2.8em;
+    color: #5094f2;
+    line-height: .8;
+    margin-bottom: calc(var(--main-w) * 2.71);
+}
+.pack_section_text p
+{
+    font-size: 1.6em;
+    color: #909090;
+}
+
+/* Большая статья */
+.article
+{
+    display: flex;
+    flex-direction: column;
+    padding: calc(var(--main-w) * 7.5) calc(var(--main-w) * 6.25);
+}
+.article_image
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.article_image h2
+{
+    font-weight: bold;
+    font-size: 3.5em;
+    color: #6f7173;
+    text-align: center;
+}
+.article_image img
+{
+    width: calc(var(--main-w) * 32.5);
+    height: auto;
+    margin: calc(var(--main-w) * 5.62) 0 calc(var(--main-w) * 3.28) 0;
+}
+.article_text h4
+{
+    font-weight: bold;
+    font-size: 2.9em;
+    color: #6f7173;
+}
+.article_text p
+{
+    font-size: 1.4em;
+    color: #999999;
+    line-height: 1.9;
+    margin-top: calc(var(--main-w) * 4);
+}
+
+/* Подвал сайта */
+footer
+{
+    height: calc(var(--main-w) * 13.12);
+    padding: calc(var(--main-w) * 5.31) 0;
+}
+footer p
+{
+    font-size: 1.3em;
+    color: #999999;
+    text-align: center;
+}
