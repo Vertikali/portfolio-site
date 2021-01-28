@@ -26,3 +26,9 @@
 {
     font-size: 1.6em;
 }
+
+/* Большая статья */
+.article_image h2
+{
+    font-size: 3em;
+}
